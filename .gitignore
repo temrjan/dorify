@@ -33,3 +33,4 @@ apps/api/prisma/*.db
 *.d.ts
 !**/vite-env.d.ts
 !jest.config.ts
+
