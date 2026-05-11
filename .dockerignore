@@ -1,0 +1,54 @@
+# ───────────────────────────────────────────────────────────────────
+# ───────────────────────────────────────────────────────────────────
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Environment / secrets (NEVER в image layers)
+.env
+.env.*
+!.env.example
+!apps/*/.env.example
+
+# Dependencies (re-installed внутри image)
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Build outputs (re-built внутри image)
+dist/
+**/dist/
+build/
+.next/
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Local toolchain
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+
+# Repo-specific reference docs не для runtime
+docs/
+*.md
+!apps/*/README.md
+
+# CI / git infra
+.github/
+.husky/
+
