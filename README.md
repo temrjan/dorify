@@ -1,4 +1,4 @@
-# Dorify v2
+# Dorify
 
 Multi-tenant pharmacy marketplace (Telegram Mini App).
 
@@ -8,7 +8,7 @@ Multi-tenant pharmacy marketplace (Telegram Mini App).
 - **Database:** PostgreSQL 17 + Prisma 6 (migrations, seed)
 - **Frontend:** React 19 + Vite + Tailwind
 - **Bot:** Grammy (Telegram)
-- **Payments:** Multicard — per-pharmacy (per-tenant) credentials
+- **Payments:** [Multicard](https://docs.multicard.uz) — per-pharmacy (per-tenant) credentials
 
 ## Domain modules (`apps/api/src/modules`)
 

@@ -1,5 +1,5 @@
 {
-  "name": "dorify-v2",
+  "name": "dorify",
   "version": "0.1.0",
   "private": true,
   "description": "Multi-tenant pharmacy marketplace — NestJS + DDD",
