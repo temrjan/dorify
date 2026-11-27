@@ -33,7 +33,7 @@ jobs:
     env:
       DATABASE_URL: postgresql://dorify_user:dorify_test_pass@localhost:5432/dorify_v2_test
       REDIS_URL: redis://localhost:6379/5
-      JWT_SECRET: 00000000000000000000000000000000
+      JWT_SECRET: "00000000000000000000000000000000"
       BOT_TOKEN: test-bot-token
       NODE_ENV: test
 
