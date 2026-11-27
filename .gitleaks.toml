@@ -1,0 +1,15 @@
+title = "Dorify gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Historical CI workflow dummy JWT_SECRET placeholder"
+condition = "AND"
+paths = [
+  '''^\.github/workflows/ci\.yml$''',
+]
+regexTarget = "secret"
+regexes = [
+  '''^test-secret-key-at-least-32-characters-long$''',
+]
